@@ -1,0 +1,18 @@
+SET mykey Hello World
+SET counter 42
+DEL mykey
+EXPIRE counter 10
+SET counter 42
+INCR counter
+INCR counter
+DECR counter
+INCR newkey
+EXPIRE counter 10
+SET user:1 Alice
+HSET user name Alice
+SET user:1 Alice
+INCR counter
+EXPIRE counter 60
+HSET user:profile name Bob
+HSET user:profile age 30
+HDEL user:profile age
